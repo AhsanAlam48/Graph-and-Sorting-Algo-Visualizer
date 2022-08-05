@@ -14,3 +14,4 @@
 [](image/bfs.png)
 [](image/dfs.png)
 [](image/sorting.png)
+![](image/bfs.png)
