@@ -9,8 +9,8 @@
 
 - 🔭 View this project here [Visual Graph And Sorting Algo]https://github.com/AhsanAlam48/Graph-and-Sorting-Algo-Visualizer)
 
-![](image/home.png)
-![](image/dfs%20ans%20bfs%20graph.png)
-![](image/bfs.png)
-![](image/dfs.png)
-![](image/sorting.png)
+![HOME PAGE](image/home.png)
+![DFS AND BFS GRAPH](image/dfs%20ans%20bfs%20graph.png)
+![BFS ALGORITHM](image/bfs.png)
+![DFS ALGORITHM](image/dfs.png)
+![SORTING ALGORITHM](image/sorting.png)
