@@ -1,0 +1,220 @@
+:root {
+    --dark-blue: #202040;
+    --dark-blue-shade: #131327;
+    --purple: #543864;
+    --orange: #ff6363;
+    --yellow: #ffbd69;
+    --text-color: #fff;
+    --white: #fff;
+    --off-white: #d8e3e7;
+    --wall: #bcccd1;
+    --header: #126e82;
+    --footer: #126e82;
+    /* 
+    var(--main-bg-color);
+     */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.color {
+    margin: 10px;
+    height: 24px;
+    width: 16px;
+    border-radius: 5px;
+    border: 2px white solid;
+    display: inline-block;
+}
+.hint{
+    padding: 10px;
+}
+.description{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: var(--dark-blue);
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+.h-unvisited {
+    background-color: var(--dark-blue);
+}
+.h-visiting {
+    background-color: var(--purple);
+}
+.h-inqueue,
+.h-instack {
+    background-color: var(--orange);
+}
+.h-visited {
+    background-color: var(--yellow);
+}
+.start,
+.end {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.wall {
+    background-color: var(--off-white) !important;
+    color: var(--off-white) !important;
+}
+.selected {
+    background-color: var(--purple) !important;
+    color: var(--white);
+}
+.inQueue,
+.inStack {
+    background-color: var(--orange) !important;
+    color: var(--white);
+}
+.visited {
+    background-color: var(--yellow) !important;
+    color: var(--white);
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+header {
+    min-height: 80px;
+    height: auto;
+    background-color: var(--header);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--white);
+}
+header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 120px;
+    flex-basis: 50%;
+    max-width: 120px;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--off-white);
+    padding: 1rem;
+}
+footer {
+    min-height: 100px;
+    padding: 1rem 0;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+#navigation img {
+    height: 30px;
+    width: 30px;
+    margin-right: 1rem;
+}
+.box {
+    /* overflow: scroll; */
+    /* width: clamp(300px - 2rem, 80vh, 900px); */
+    /* height: clamp(300px - 2rem, 80vh, 900px); */
+    margin: 1rem auto;
+    gap: 2px;
+    box-sizing: border-box;
+    background-color: var(--white);
+    border: white 5px solid;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.childBox {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+    font-size: 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border-right: 1px solid white;
+}
+.childBox:hover {
+    background-color: var(--dark-blue-shade);
+}
+#options {
+    width: clamp(300px, 80%, 800px);
+    background-color: var(--off-white);
+    border-radius: 4px;
+    padding: 1rem;
+    color: #424642;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 10px;
+}
+#options > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#options label {
+    margin-right: 0.5rem;
+}
+
+#options input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #d8e3e7;
+}
+#options button {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #d8e3e7;
+    font-size: large;
+}
+#start {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 100px;
+}
+@media only screen and (max-width: 850px) {
+    #options {
+        grid-template-columns: 1fr;
+    }
+    #options > div {
+        justify-content: center;
+    }
+    #options > div label {
+        flex-basis: 100px;
+    }
+    #options input {
+        padding: 0.5rem;
+        border-radius: 4px;
+        flex-basis: 200px;
+        width: 200px;
+        border: 1px solid #d8e3e7;
+    }
+    #options button {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        flex-basis: 200px;
+        min-width: 200px;
+        border: 1px solid #d8e3e7;
+        font-size: large;
+    }
+    .description{
+        grid-template-columns: 1fr;
+    }
+    .description>div{
+        margin: .5rem 0;
+    }
+}

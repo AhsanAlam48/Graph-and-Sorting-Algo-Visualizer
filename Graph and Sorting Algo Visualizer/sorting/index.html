@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sorting Visualizer</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="./favicon.ico" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+
+
+<body>
+	
+	<div id="main">
+		<div>
+			<h3>Sorting Visualizer</h3>
+			<div>
+				<p>
+					Array Size:
+					<input class="array_size slider-input" type="range" min="5" max="100" step="1" value="10" />
+					<br /><span id="curr"></span>
+				</p>
+				<p>
+					Speed:
+					<input class="speed slider-input" type="range" min="1000" max="5000" step="30" value="1500" />
+				</p>
+				<div>
+					<button class="new btn btn-outline-light">
+						New Array
+					</button>
+				</div>
+				<div>
+					<button class="bubble btn btn-outline-light">
+						Bubble Sort
+					</button>
+				</div>
+				<div>
+					<button class="selection btn btn-outline-light">
+						Selection Sort
+					</button>
+				</div>
+				<div>
+					<button class="insertion btn btn-outline-light">
+						Insertion Sort
+					</button>
+				</div>
+				<div>
+					<button class="merge btn btn-outline-light">
+						Merge Sort
+					</button>
+				</div>
+				<div>
+					<button class="quick btn btn-outline-light">
+						Quick Sort
+					</button>
+				</div>
+				<div>
+					<button class="heap btn btn-outline-light">
+						Heap Sort
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="container" style="position: relative">
+			<h4 id="array"></h4>
+			<h4 id="toSave">Array: <a href="#">Click here</a></h4>
+		</div>
+	</div>
+
+	<script src="js/selection.js"></script>
+	<script src="js/bubble.js"></script>
+	<script src="js/insertion.js"></script>
+	<script src="js/merge.js"></script>
+	<script src="js/quick.js"></script>
+	<script src="js/heap.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
