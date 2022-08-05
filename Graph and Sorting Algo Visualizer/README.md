@@ -7,6 +7,6 @@
 <!-- <p>For Path Finding first selected box will be start position and second selected box will be final position, and any number of boxes can be made as wall after that.
 <p>Algorithm start by clicking on start button, and displays the result for 5 seconds after reaching to target node from start node.</p> -->
 
-- 🔭 View this project here [Visual Graph And Sorting Algo](https://github.com/AhsanAlam48/Graph and Sorting Algo Visualizer)
+- 🔭 View this project here [Visual Graph And Sorting Algo]https://github.com/AhsanAlam48/Graph-and-Sorting-Algo-Visualizer)
 
 [](image)
