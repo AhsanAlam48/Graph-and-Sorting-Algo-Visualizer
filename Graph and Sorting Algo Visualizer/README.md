@@ -9,4 +9,8 @@
 
 - 🔭 View this project here [Visual Graph And Sorting Algo]https://github.com/AhsanAlam48/Graph-and-Sorting-Algo-Visualizer)
 
-[](image)
+[](image/home.png)
+[](image/dfs%20ans%20bfs%20graph.png)
+[](image/bfs.png)
+[](image/dfs.png)
+[](image/sorting.png)
